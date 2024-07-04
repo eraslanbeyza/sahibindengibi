@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sanabu</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/afa52af320.js" crossorigin="anonymous"></script>
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="path/to/lightbox.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+    <style>
+        .table {
+          border-spacing: 0;
+          width: 100%;
+          border: 1px solid #ddd;    
+          font-size: 12px;
+          background-color: white;
+          color: black;
+
+        }
+        
+        .th {
+          cursor: pointer;
+        }
+        
+        .th, td {
+          text-align: left;
+          padding: 16px;
+        }
+        
+        .tr:nth-child(even) {
+          background-color: #f2f2f2
+        }
+
+        .formyil{
+      border-radius: 5px;
+      border-style: ridge;
+      border-color: #999999;
+      border-width: 1px;
+      height: 35px;
+        }
+
+.list-group-item{
+  display: inline;
+}
+
+        </style>
+
+</head>
+<body style="background-color: #f7f7f7;">
+
+    <header class="desktop"> 
+        <!-- Topbar Start -->
+        <div class="container-fluid">
+            <div class="row align-items-center py-3 px-xl-5">
+                <div class="logo col-lg-3 col-md-3 d-none d-md-block ">
+                    <a href="index.html">
+                        <img src="img/sanabu.png">
+                    </a>
+                </div>
+    
+         <!-- MOBİLE  -->
+                  <div class="mobile-logo col-lg-3 col-md-8 col-4 col-xs-4 d-block d-md-none text-left ">
+                    <a href="index.html">
+                        <img src="img/sanabu-mobile.png" >
+                    </a>         
+                </div>
+                <div class="mobile-bar col-lg-3 col-md-4 col-xs-8 col-6 text-m-right  d-md-none d-block">
+                    
+                    <a href="login.html" class="btn-user" >
+                        <i class="fa-regular fa-user " ></i>
+                        <span class="badge" style=" background-color: transparent; margin-left: -5px;">Giriş Yap</span>
+                    </a>
+                    <a href="register.html" class="btn mr-4" >
+                        <i ></i>
+                        <span class="badge" style=" font-weight: 800; background-color: transparent; color:#F5CD3B;margin-top:-5px;">/ Hesap Aç</span>
+                    </a>
+                    <a href="" class="btn-ilan">
+                        <i class="fa fa-plus-square text-primary"></i>
+                        <span class="badge" style="background-color: transparent; color:#F5CD3B; margin-left: -5px;">İlan Ver</span>
+                    </a>
+                </div>
+    
+                <div class="searchbox-mobile col-lg-6 col-md-5  col-sm-12 col-xs-12  text-center d-md-none d-block">
+                    <div class="search">
+                      <div class="input-group mb-3">
+                     <input type="text" class="form-control" placeholder="Kelime, ilan no ile ara" aria-label="Kelime, ilan no ile ara" aria-describedby="basic-addon2">
+                     <div class="input-group-append">
+                       <button class="btn-submit" type="button"  onclick="location.href='product.html';">
+                         <i class="fa fa-search"></i></button>
+                     </div>
+                   </div>
+                      </div>
+                  </div>
+         <!-- MOBİLE  -->
+    
+         <div class="searchbox col-lg-5 col-md-5  col-sm-12 col-xs-12  text-center  d-none d-md-block">
+            <div class="search">
+             <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Kelime, ilan no ile ara" aria-label="Kelime, ilan no ile ara" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn-submit" type="button"  onclick="location.href='product.html';">
+                <i class="fa fa-search"></i></button>
+            </div>
+          </div>
+             </div>
+          </div>
+                
+                <div class="user-bar col-lg-4 col-md-4  col-sm-12 col-xs-12 text-right d-none d-md-block ">
+                    <a href="login.html" class="btn-user ">
+                        <i class="fa-regular fa-user" ></i>
+                        <span class="badge" style="background-color: transparent; margin-left: -5px;">Giriş Yap</span>
+                        
+                    </a> 
+                    <a href="register.html" class="btn mr-4">
+                        <i ></i>
+                        <span class="badge" style="font-weight: 800; background-color: transparent; color:#F5CD3B;">/ Hesap Aç</span>
+                    </a>
+    
+                    <a href="" class="btn-ilan">
+                        <i class="fa fa-plus-square text-primary"></i>
+                        <span class="badge" style="background-color: transparent; color:#F5CD3B; margin-left: -5px;">İlan Ver</span>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+
+<!-- LAPTOP EKRANI -->
+<div class="container  d-none d-md-block">
+
+  <!-- breadcrumb -->
+  
+<div class="row mt-0 shadow bg-white rounded">
+  <div class="col-6">
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb mt-2">
+      <li class="breadcrumb-item"><a href="#">Vasıta</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Otomobil</li>
+    </ol>
+  </nav>
+</div>
+
+<div class="col-6">
+<div class="mt-3"style="float: right;">
+<a href="#">Favori İlanlarım</a>
+<a href="#" class="ml-3">Favori Aramalarım</a>
+</div>
+</div>
+
+
+
+<div class="col-12" >
+    <div class="card card-body collapse show " id="Filter">
+      <select class="shadow-sm bg-white select-filter" id="select-filter" style="float: right; font-size: 14px; border:none; background-color:#fafafa;">
+          <option selected>Fİyat- Pahalıdan Ucuza</option>
+          <option value="1">Fiyat- Ucuzdan Pahalıya</option>
+          <option value="2">Yıl- Yeniden Eskiye</option>
+          <option value="3">Yıl- Eskiden Yeniye</option>
+          <option value="4">Km- Düşükten Yükseğe</option>
+          <option value="5">Km- Yüksekten Düşüğe</option>
+          <option value="6">Tarih- Yeniden Eskiye</option>
+          <option value="7">Tarih- Eskiden Yeniye</option>
+        </select>
+     </div>
+     </div>
+
+
+
+</div>
+
+
+<!-- breadcrumb -->
+    <div class="row cat">
+
+
+      <div class="col-5 col-md-3 col-lg-3 col-sm-5 col-xs-5 mt-2" style="margin-left: -8px;">
+        <!-- KATEGORİ -->
+        <div id="alt-kategori" class="alt-kategori-detay shadow-sm p-3 mb-5 bg-white rounded-lg " >
+            <a href="" class="kategori-list-item mb-2">Konut</a>
+            <a href="" class="kategori-list-item mb-2">işyeri</a>
+            <a href="" class="kategori-list-item mb-2">Konut</a>
+            <a href="" class="kategori-list-item mb-2">işyeri</a>
+            <a href="" class="kategori-list-item mb-2">Konut</a>
+            <a href="" class="kategori-list-item mb-2">Konut</a>
+            <a href="" class="kategori-list-item mb-2">işyeri</a>
+            <a href="" class="kategori-list-item mb-2">Konut</a>
+            <a href="" class="kategori-list-item mb-2">işyeri</a>
+            <a href="" class="kategori-list-item mb-2">Konut</a>           
+            <a href="" class="kategori-list-item mb-2">Konut</a>
+            <a href="" class="kategori-list-item mb-2">işyeri</a>
+            <a href="" class="kategori-list-item mb-2">Konut</a>
+            <a href="" class="kategori-list-item mb-2">işyeri</a>
+            <a href="" class="kategori-list-item mb-2">Konut</a>            
+            <a href="" class="kategori-list-item mb-2">Konut</a>
+            <a href="" class="kategori-list-item mb-2">işyeri</a>
+            <a href="" class="kategori-list-item mb-2">Konut</a>
+            <a href="" class="kategori-list-item mb-2">işyeri</a>
+            <a href="" class="kategori-list-item mb-2">Konut</a>
+            
+        </div>
+     <!-- ADRES -->
+     <div class="kategori-filtre bg-white shadow-sm border-top ">
+        <button class="btn bg-white w-100 " type="button" data-toggle="collapse" data-target="#collapseAdres" aria-expanded="false" aria-controls="collapseAdres" style="color: black; text-align: left;"> Adres
+        </button>
+           
+       <div class="container collapse w-100" id="collapseAdres">
+              <div class="card card-body">
+                <select class="select-il w-100" id="select-il" style="border:none; background-color:#fafafa;">
+                    <option selected>İl</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+               </div>
+
+            <div class="card card-body">
+                <select class="select-ilce w-100" id="select-ilce" style="border:none; background-color:#fafafa;">
+                    <option selected>İlçe</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+            </div>
+        </div>
+     </div>
+<!-- FİYAT -->
+     <div class="bg-white shadow-sm border-top" style="margin-top: 0.08rem;"> 
+        <button class="btn bg-white w-100" type="button" data-toggle="collapse" data-target="#collapseprice" aria-expanded="false" 
+        aria-controls="collapseprice"style="color: black;text-align: left;" > Fiyat
+        </button>
+
+        <div class="container collapse mt-1" id="collapseprice" style="text-align: center;">
+
+            <input type="text" class=" formyil w-25" id="formyil" name="formyil" maxlength="4" placeholder="min">  
+            <span class="seperator">-</span>
+            <input type="text" class=" formyil w-25" id="formyil" name="formyil" maxlength="4" placeholder="max">  
+            <button class="btn" type="button" data-smart-cat-price-button><i class="fas fa-arrow-right"></i></button>
+        </div>  
+    </div>
+
+<!-- YIL -->
+     <div class="bg-white shadow-sm border-top" style="margin-top: 0.07rem;">
+        <button class="btn bg-white w-100" type="button" data-toggle="collapse" data-target="#collapseyil" aria-expanded="false" aria-controls="collapseyil"style="color: black;text-align: left;"> Yıl
+        </button>
+
+        <div class="container collapse mt-1" id="collapseyil" style="text-align: center;">
+
+            <input type="text" class=" formyil w-25 " id="formyil" name="formyil" maxlength="4" placeholder="min">  
+            <span class="seperator">-</span>
+            <input type="text" class=" formyil w-25" id="formyil" name="formyil" maxlength="4" placeholder="max">  
+            <button class="btn" type="button" data-smart-cat-price-button><i class="fas fa-arrow-right"></i></button>
+        </div>  
+    </div>
+ <!-- VİTES -->
+ <div class="bg-white shadow-sm border-top"style="margin-top: 0.07rem;"> 
+    <button class="btn bg-white w-100" type="button" data-toggle="collapse" data-target="#collapsevites" aria-expanded="false" aria-controls="collapsevites" style="color: black;text-align: left;">Vites Tipi
+    </button>
+
+    <div class="container collapse mt-1" id="collapsevites" style="text-align: left;">
+    
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="vites">
+            <label class="custom-control-label" for="vites">Otomatik</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="vites1">
+          <label class="custom-control-label" for="vites1">Manuel</label>
+        </div>
+
+    </div>  
+</div>
+    <!-- KM -->
+     <div class="bg-white shadow-sm border-top" style="margin-top: 0.08rem;"> 
+        <button class="btn bg-white w-100" type="button" data-toggle="collapse" data-target="#collapsekm" aria-expanded="false" aria-controls="collapsekm" style="color: black;text-align: left;">KM
+        </button>
+
+        <div class="container collapse mt-1" id="collapsekm" style="text-align: center;">
+
+            <!-- <input type="text" class="form-control formyil w-25" id="formyil" name="formyil" maxlength="4" placeholder="min">         -->
+            <input type="text" class="formyil w-25" id="formyil" name="formyil" maxlength="4" placeholder="min">  
+            <span class="seperator">-</span>
+            <input type="text" class="formyil w-25" id="formyil" name="formyil" maxlength="4" placeholder="max">  
+            <button class="btn" type="button" data-smart-cat-price-button><i class="fas fa-arrow-right"></i></button>
+        </div>  
+    </div>
+
+
+   
+
+
+
+    <!-- <div class="category-price-inputs" data-smart-cat-filter="price-inputs">
+        <input class="form-control number-input" name="smart-cat-min-price" data-smart-cat-search="1" placeholder="min" />
+        <span class="seperator">-</span>
+        <input class="form-control number-input" name="smart-cat-max-price" data-smart-cat-search="1" placeholder="max" />
+        <button class="btn" type="button" data-smart-cat-price-button><i class="fas fa-arrow-right"></i></button>
+    </div> -->
+
+
+     <!-- <div id="alt-kategori" class="collapse show">
+        <a href="" class="kategori-list-item" style="font-size: 13px;">Konut</a>
+        <a href="" class="kategori-list-item" style="font-size: 13px;">işyeri</a>
+        
+    </div> -->
+
+
+
+
+
+    
+     
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <div class="col-7 col-md-9 col-lg-9 col-sm-7 col-xs-7 mt-4 bg-white">
+
+      
+      <!-- <div class="mt-0" style="float: right;">
+        <div class="collapse show w-100" id="Filter">
+          <div class="card card-body">
+            <select class="shadow-sm bg-white rounded-lg select-filter w-100" id="select-filter" style=" font-size: 13px; border:none; background-color:#fafafa;">
+                <option selected>Fİyat- Pahalıdan Ucuza</option>
+                <option value="1">Fiyat- Ucuzdan Pahalıya</option>
+                <option value="2">Yıl- Yeniden Eskiye</option>
+                <option value="3">Yıl- Eskiden Yeniye</option>
+                <option value="4">Km- Düşükten Yükseğe</option>
+                <option value="5">Km- Yüksekten Düşüğe</option>
+                <option value="6">Tarih- Yeniden Eskiye</option>
+                <option value="7">Tarih- Eskiden Yeniye</option>
+              </select>
+           </div>
+           </div>
+
+      </div> -->
+
+
+
+      <div class="container ">
+        <div class="row">
+          <div class="col">
+          <div class="list-group d-inline-block mt-3" id="list-tab" role="tablist" >
+            
+            <!-- <a class="kategori-detay-list-group kategori-detay-list-group-action active" id="list-tümü-list" data-toggle="list" href="#list-tümü" role="tab" aria-controls="tümü" >Tümü</a>
+        
+            <a class="kategori-detay-list-group kategori-detay-list-group-action" id="list-sahibinden-list" data-toggle="list" href="#list-sahibinden" role="tab" aria-controls="profile">Sahibinden</a>
+             -->
+           <a class="list-group-item list-group-item-action active" id="list-tümü-list" data-toggle="list" href="#list-tümü" role="tab" aria-controls="tümü" >Tümü</a>
+            <a class="list-group-item list-group-item-action" id="list-sahibinden-list" data-toggle="list" href="#list-sahibinden" role="tab" aria-controls="profile">Sahibinden</a> 
+          </div>
+        </div>
+      </div>
+
+        <div class="row mt-3">
+        <div class="col-12">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-tümü" role="tabpanel" aria-labelledby="list-tümü-list">
+
+
+              <div class="table-responsive">
+                <table  class="table table-bordered mt-0" id="myTable">
+                <thead>
+                  <tr>
+                    <th colspan="2" id="product-image" name="product-image" ></th>
+                    <th colspan="2" scope="col">İlan Başlığı</th>
+                    <th scope="col" onclick="sortTable(0)">Fiyat</th>
+                    <th scope="col" onclick="sortTable(0)">İlan Tarihi</th>
+                    <th scope="col">İl/İlçe</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="2" class="w-50 col-3">        
+                      <a href="urundetail.html"><img src="img/araba1.PNG" class="w-100" id="product-image" name="product-image" >  </a> </td>
+                     <td colspan="2">@mdoasdddddddsfsf</td>
+                    <td>12358</td>
+                    <td>29.05.2024</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="w-50 col-3">        
+                      <a href="urundetail.html"><img src="img/araba1.PNG" class="w-100" id="product-image" name="product-image" >  </a> </td>
+                      <td colspan="2">@mdoasdddddddsfsf</td>
+                      <td>12388</td>
+                      <td>28.04.2024</td>
+                      <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="w-50 col-3">        
+                      <a href="urundetail.html"><img src="img/araba1.PNG" class="w-100" id="product-image" name="product-image" >  </a> </td>
+                      <td colspan="2">@mdoasdddddddsfsf</td>
+                      <td>12389</td>
+                      <td>29.02.2024</td>
+                      <td>@mdo</td>
+                  </tr>
+                  <tr> 
+                    <td  colspan="2" class="w-50 col-3">        
+                      <a href="urundetail.html"><img src="img/araba1.PNG" class="w-100" id="product-image" name="product-image" >  </a> </td>
+                      <td colspan="2">@mdoasdddddddsfsf</td>
+                      <td>12384</td>
+                      <td>29.02.2024</td>
+                      <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <td  colspan="2" class="w-50 col-3">        
+                         <a href="urundetail.html"><img src="img/araba1.PNG" class="w-100" id="product-image" name="product-image" >  </a> </td>
+                    <td colspan="2">@mdoasdddddddsfsf</td>
+                    <td>12387</td>
+                    <td>29.02.2024</td>
+                    <td>@mdo</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+
+            </div>
+            <div class="tab-pane fade" id="list-sahibinden" role="tabpanel" aria-labelledby="list-sahibinden-list">9686</div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+        <div class="table-responsive">
+            <table  class="table table-bordered mt-0" id="myTable">
+            <thead>
+              <tr>
+                <th colspan="2" id="product-image" name="product-image" ></th>
+                <th colspan="2" scope="col">İlan Başlığı</th>
+                <th scope="col" onclick="sortTable(0)">Fiyat</th>
+                <th scope="col" onclick="sortTable(0)">İlan Tarihi</th>
+                <th scope="col">İl/İlçe</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2" class="w-50 col-3">        
+                  <a href="urundetail.html"><img src="img/araba1.PNG" class="w-100" id="product-image" name="product-image" >  </a> </td>
+                 <td colspan="2">@mdoasdddddddsfsf</td>
+                <td>12358</td>
+                <td>29.05.2024</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="w-50 col-3">        
+                  <a href="urundetail.html"><img src="img/araba1.PNG" class="w-100" id="product-image" name="product-image" >  </a> </td>
+                  <td colspan="2">@mdoasdddddddsfsf</td>
+                  <td>12388</td>
+                  <td>28.04.2024</td>
+                  <td>@mdo</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="w-50 col-3">        
+                  <a href="urundetail.html"><img src="img/araba1.PNG" class="w-100" id="product-image" name="product-image" >  </a> </td>
+                  <td colspan="2">@mdoasdddddddsfsf</td>
+                  <td>12389</td>
+                  <td>29.02.2024</td>
+                  <td>@mdo</td>
+              </tr>
+              <tr> 
+                <td  colspan="2" class="w-50 col-3">        
+                  <a href="urundetail.html"><img src="img/araba1.PNG" class="w-100" id="product-image" name="product-image" >  </a> </td>
+                  <td colspan="2">@mdoasdddddddsfsf</td>
+                  <td>12384</td>
+                  <td>29.02.2024</td>
+                  <td>@mdo</td>
+              </tr>
+              <tr>
+                <td  colspan="2" class="w-50 col-3">        
+                    Larry the Bird</td>
+                <td colspan="2">@mdoasdddddddsfsf</td>
+                <td>12387</td>
+                <td>29.02.2024</td>
+                <td>@mdo</td>
+              </tr>
+            </tbody>
+          </table>
+        </div> -->
+
+
+
+        </div>
+
+
+<!-- 
+<div class="col-7 col-md-9 col-lg-9 col-sm-7 col-xs-7 mt-5 shadow-sm p-3 mb-5 bg-white rounded-lg">
+    <div class="card w-100">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-3 col-xs-5 col-sm-5 col-5"> 
+               <img class="card-img h-100 w-100" src="img/araba1.PNG" alt="Card image cap">
+            </div>
+            <div class="col-lg-9 col-xs-7 col-sm-7 col-7">
+                <p class="fav-card-text" id="fav-card-text" style="font-size:19px;" >With supporting text below as a natural lead-in to additional content.</p>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Vasıta</a></li>
+                      <li class="breadcrumb-item"><a href="#">Otomobil</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    </ol>
+                  </nav>
+                <p class="price" style="text-align: right;"> 1.500.000 TL</p>
+             
+            </div>          
+           </div>
+        </div>
+    </div>
+
+    <div class="card w-100 ">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-3 col-xs-5 col-sm-5 col-5"> 
+               <img class="card-img h-100 w-100" src="img/araba1.PNG" alt="Card image cap">
+            </div>
+            <div class="col-lg-9 col-xs-7 col-sm-7 col-7">
+                <p class="fav-card-text" id="fav-card-text" style="font-size:19px;" >With supporting text below as a natural lead-in to additional content.</p>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Vasıta</a></li>
+                      <li class="breadcrumb-item"><a href="#">Otomobil</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    </ol>
+                  </nav>
+                <p class="price" style="text-align: right;"> 1.500.000 TL</p>
+             
+            </div>          
+           </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+    </div>
+</div>
+
+
+<!-- LAPTOP EKRANI SON -->
+
+
+<!-- MOBİL -->
+<div class="container d-block d-md-none ">
+
+  <div class="row w-75 mt-3 d-block d-md-none d-lg-none" style="margin: auto;">
+    <!-- <div class="d-block d-sm-block d-md-block d-lg-none">
+      <div class="cat-responsive-buttons">
+          <div class="btn-group">
+              <button class="btn btn-outline-dark" onclick="showSmartCategoryPopup('filter')">{{ cevir('filtreleme') }}</button>
+              <button class="btn btn-outline-dark" onclick="showSmartCategoryPopup('order')">{{ cevir('siralama') }}</button>
+          </div>
+      </div>
+  
+      <div class="cat-responsive-popup d-none">
+          <div class="c-r-p-content"></div>
+          <div class="c-r-p-bar"></div>
+      </div>
+  </div> -->
+  
+<!-- MOBİL FİLTRELEME -->
+
+
+<button type="button" class="btn btn-primary w-25 ml-5" data-toggle="modal" data-target="#filtreleme" style="color: black; height: 45px;">
+  Filtrele
+</button>
+
+<button type="button" class="btn btn-primary w-25 ml-4" style="color: white; height: 45px;">  
+
+<div class="collapse show  " id="Filter">
+  <div class="card card-body">
+    <select class="select-filter" id="select-filter" style=" font-size: 16px; border:none; background-color: transparent;">
+      <option selected>Sırala</option>
+        <option value="1">Fİyat- Pahalıdan Ucuza</option>
+        <option value="2">Fiyat- Ucuzdan Pahalıya</option>
+        <option value="3">Yıl- Yeniden Eskiye</option>
+        <option value="4">Yıl- Eskiden Yeniye</option>
+        <option value="5">Km- Düşükten Yükseğe</option>
+        <option value="6">Km- Yüksekten Düşüğe</option>
+        <option value="7">Tarih- Yeniden Eskiye</option>
+        <option value="8">Tarih- Eskiden Yeniye</option>
+      </select>
+   </div>
+   </div>
+
+  </button>
+
+
+<!-- Filtreleme Modal -->
+<div class="modal fade" id="filtreleme" tabindex="-1" role="dialog" aria-labelledby="filtrelemeLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="filtrelemeLabel">Filtrele</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+    
+          <div class="list-group list-group-flush" style="margin-left: -16px; margin-right: -16px;">
+            <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+             Kategori   <i class="fa fa-chevron-right" style="float: right;color: #F5CD3B;"></i>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action disabled" aria-disabled="true"  style="background-color: #f3eded;" >ARAMA SEÇENEKLERİ</a>
+            <a href="#" class="list-group-item list-group-item-action">Adres Bilgileri <i class="fa fa-chevron-right" style="float: right;color: #F5CD3B;"></i></a>
+            <a href="#" class="list-group-item list-group-item-action disabled" aria-disabled="true"  style="background-color: #f3eded;" >İLAN BİLGİLERİ</a>
+            <a href="#" class="list-group-item list-group-item-action">Fiyat <i class="fa fa-chevron-right" style="float: right; color: #F5CD3B;"></i></a>
+            <a class="list-group-item list-group-item-action">İlan Tarihi <i class="fa fa-chevron-right" style="float: right;color: #F5CD3B;"></i></a>
+          </div>
+
+       </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Temizle</button>
+        <button type="button" class="btn btn-primary">Filtrele</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<!-- MOBİL FİLTRELEME -->
+
+        <div class="card w-100 col-12 col-sm-12 col-xs-12 mt-3 shadow-sm p-2 mb-2 bg-white rounded-lg">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-3 col-xs-5 col-sm-5 col-5"> 
+                   <img class="card-img h-100 w-100" src="img/araba1.PNG" alt="Card image cap">
+                </div>
+                <div class="col-lg-9 col-xs-7 col-sm-7 col-7">
+                    <p class="fav-card-text" id="fav-card-text" style="font-size:19px;" >Orj. 113.000 km..tam otomatik..Hasarsız..Bakımları tam..Yetkili servis bakımlı .</p>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Vasıta</a></li>
+                          <li class="breadcrumb-item"><a href="#">Otomobil</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Data</li>
+                        </ol>
+                      </nav>
+                    <p class="price" style="text-align: right;"> 1.500.000 TL</p>
+                 
+                </div>          
+               </div>
+            </div>
+        </div>
+    
+        <div class="card w-100 col-12 col-sm-12 col-xs-12 shadow-sm p-2 mb-2 bg-white rounded-lg">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-3 col-xs-5 col-sm-5 col-5"> 
+                   <img class="card-img h-100 w-100" src="img/araba1.PNG" alt="Card image cap">
+                </div>
+                <div class="col-lg-9 col-xs-7 col-sm-7 col-7">
+                    <p class="fav-card-text" id="fav-card-text" style="font-size:19px;" >With supporting text below as a natural lead-in to additional content.</p>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Vasıta</a></li>
+                          <li class="breadcrumb-item"><a href="#">Otomobil</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Data</li>
+                        </ol>
+                      </nav>
+                    <p class="price" style="text-align: right;"> 1.500.000 TL</p>
+                 
+                </div>          
+               </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="col-12 col-md-12  col-sm-12 col-xs-12 ">
+
+        <div class="table-responsive">
+            <table  class="table table-bordered mt-4">
+            <thead>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2" class="w-50 col-3">        
+                  <img src="img/araba1.PNG" class="w-100" id="product-image" name="product-image" >  </td>
+                 <td colspan="2">@mdoasdddddddsfsf</td>
+            
+              
+              </tr>
+              <tr>
+                <td colspan="2" class="w-50 col-3">        
+                  <img src="img/araba1.PNG" class="w-100" id="product-image" name="product-image" >  </td>
+                  <td colspan="2">@mdoasdddddddsfsf</td>
+             
+               
+              </tr>
+              <tr>
+                <td colspan="2" class="w-50 col-3">        
+                  <img src="img/araba1.PNG" class="w-100" id="product-image" name="product-image" >  </td>
+                  <td colspan="2"> <p> Orijinal 113.000 km...tam otomatik...Hasarsız...Bakımları tam.. Yetkili servis bakımlı </p>
+                    <p  style="float: right; font-weight: bold;">123.000</p>
+                  </td>
+      
+             
+              </tr>
+              <tr> 
+                <td  colspan="2" class="w-50 col-3">        
+                  <img src="img/araba1.PNG" class="img-fluid w-100" id="product-image" name="product-image" >  </td>
+                  <td colspan="2">@mdoasdddddddsfsf.</td>
+            
+           
+              </tr>
+              <tr>
+                <td  colspan="2" class="w-50 col-3">        
+                    Larry the Bird</td>
+                <td colspan="2">@mdoasdddddddsfsf</td>
+               
+         
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        </div> -->
+
+
+</div>
+
+<!-- MOBİL SON-->
+    
+    
+    <!-- Footer Start -->
+    <footer> 
+        <div class="container-fluid bg-secondary text-dark mt-5 pt-5">
+            <div class="row px-xl-5 pt-5">
+                <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                    <a href="" class="text-decoration-none">
+                        <h1 class="mb-4 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border border-white px-3 mr-1">S</span>Sanabu</h1>
+                    </a>
+                    <p>LoremIpsum....</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>KKTC</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>info@sanabu.com</p>
+                    <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+0850 214 9625</p>
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="row">    
+                     <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold text-dark mb-4">Kurumsal</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                           <a class="text-dark mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Hakkımızda</a>
+                            <a class="text-dark mb-2" href="cart.html"><i class="fa fa-angle-right mr-2"></i>Sözleşmeler</a>
+                            <a class="text-dark mb-2" href="checkout.html"><i class="fa fa-angle-right mr-2"></i>Kurumsal</a>
+                             <a class="text-dark" href="contact.html"><i class="fa fa-angle-right mr-2"></i>İletişim</a>
+                             </div>
+                         </div>
+                        <div class="col-md-4 mb-5">
+                            <h5 class="font-weight-bold text-dark mb-4">Hizmetlerimiz</h5>
+                            <div class="d-flex flex-column justify-content-start">
+                                <a class="text-dark mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Doping</a>
+                                <a class="text-dark mb-2" href="shop.html"><i class="fa fa-angle-right mr-2"></i>Güvenli E-Ticaret </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5">
+                            <h5 class="font-weight-bold text-dark mb-4">Gizlilik ve Kullanım</h5>
+                            <div class="d-flex flex-column justify-content-start">
+                                <a class="text-dark mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Güvenli Alışverişin İpuçları</a>
+                                <a class="text-dark mb-2" href="sözlesmeler.html"><i class="fa fa-angle-right mr-2"></i>Sözleşmeler ve Kurallar </a>
+                                <a class="text-dark mb-2" href="sözlesmeler.html"><i class="fa fa-angle-right mr-2"></i>Hesap Sözleşmesi</a>
+                                <a class="text-dark mb-2" href="sözlesmeler.html"><i class="fa fa-angle-right mr-2"></i>Kullanım Koşulları </a>
+                                <a class="text-dark mb-2" href="sözlesmeler.html"><i class="fa fa-angle-right mr-2"></i>Kişisel Verilerin Korunması</a>
+                                <a class="text-dark mb-2" href="sözlesmeler.html"><i class="fa fa-angle-right mr-2"></i>Çerez Yönetimi</a>
+                                <a class="text-dark mb-2" href="shop.html"><i class="fa fa-angle-right mr-2"></i>Yardım ve İşlem Rehberi </a>
+                            </div>
+                        </div>
+    
+       
+                        <!-- E-Bülten -->
+                        <!-- <div class="col-md-4 mb-5">
+                            <h5 class="font-weight-bold text-dark mb-4">Newsletter</h5>
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control border-0 py-4" placeholder="Your Name" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control border-0 py-4" placeholder="Your Email"
+                                        required="required" />
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary btn-block border-0 py-3" type="submit">Subscribe Now</button>
+                                </div>
+                            </form>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row border-top border-light mx-xl-5 py-4">
+                <div class="col-md-6 px-xl-0">
+                    <p class="mb-md-0 text-center text-md-left text-dark">
+                        &copy; <a class="text-dark font-weight-semi-bold" href="#">Sanabu</a> Designed
+                        by
+                        <a class="text-dark font-weight-semi-bold" href="https://innovayazilim.net/" target="_blank">İnnova Yazılım</a><br>
+                         <!-- Distributed By <a href="https://themewagon.com" target="_blank">ThemeWagon</a> -->
+                    </p>
+                </div>
+    
+    
+               <!-- Footer Card Görsel -->
+    
+                <!-- <div class="col-md-6 px-xl-0 text-center text-md-right">
+                    <img class="img-fluid" src="img/payments.png" alt="">
+                </div> -->
+    
+            <!-- Footer Card Görsel End-->
+    
+            </div>
+        </div>
+    </footer>
+        <!-- Footer End -->
+
+    <!-- Bottom Navbar -->
+        <div class="bottom-navbar">
+            <a href="index.html">         
+                <i class="fa fa-home" style="font-size: 20px; color: #F5CD3B;"></i>
+                <strong>Anasayfa</strong>
+            </a>
+    
+            <a href="index.html">
+                <i class="fa fa-user"  style="font-size: 20px; color: #F5CD3B;"></i>
+                <strong>Hesabım</strong>
+            </a>
+            <a href="index.html">
+                <i class="fa fa-plus-square" style="font-size: 20px; color: #F5CD3B;"></i>
+     
+                <strong>İlan Ver</strong>
+            </a>
+            <a href="index.html">
+                <i class="fa fa-heart" style="font-size: 20px; color: #F5CD3B;" ></i>
+                <strong>Favorilerim</strong>
+            </a>
+        </div>
+        <!-- Bottom Navbar Son -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    
+    
+           <!-- JavaScript Libraries -->
+           <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+           <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+           <script src="lib/easing/easing.min.js"></script>
+           <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+       
+           <!-- Contact Javascript File -->
+           <script src="mail/jqBootstrapValidation.min.js"></script>
+           <script src="mail/contact.js"></script>
+       
+           <!-- Template Javascript -->
+           <script src="js/main.js"></script>
+           <script src="path/to/lightbox.js"></script>
+           <script src="lib/lightbox/js/lightbox.min.js"></script>
+  
+
+<script>
+    $(".formyil").keyup(function (){
+
+if (this.value.match(/[^0-9]/g)){
+
+  this.value = this.value.replace(/[^0-9]/g,'');
+
+}
+
+});
+
+
+/*table*/
+            function sortTable(n) {
+              var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+              table = document.getElementById("myTable");
+              switching = true;
+              //Set the sorting direction to ascending:
+              dir = "asc"; 
+              /*Make a loop that will continue until
+              no switching has been done:*/
+              while (switching) {
+                //start by saying: no switching is done:
+                switching = false;
+                rows = table.rows;
+                /*Loop through all table rows (except the
+                first, which contains table headers):*/
+                for (i = 1; i < (rows.length - 1); i++) {
+                  //start by saying there should be no switching:
+                  shouldSwitch = false;
+                  /*Get the two elements you want to compare,
+                  one from current row and one from the next:*/
+                  x = rows[i].getElementsByTagName("TD")[n];
+                  y = rows[i + 1].getElementsByTagName("TD")[n];
+                  /*check if the two rows should switch place,
+                  based on the direction, asc or desc:*/
+                  if (dir == "asc") {
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                      //if so, mark as a switch and break the loop:
+                      shouldSwitch= true;
+                      break;
+                    }
+                  } else if (dir == "desc") {
+                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                      //if so, mark as a switch and break the loop:
+                      shouldSwitch = true;
+                      break;
+                    }
+                  }
+                }
+                if (shouldSwitch) {
+                  /*If a switch has been marked, make the switch
+                  and mark that a switch has been done:*/
+                  rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                  switching = true;
+                  //Each time a switch is done, increase this count by 1:
+                  switchcount ++;      
+                } else {
+                  /*If no switching has been done AND the direction is "asc",
+                  set the direction to "desc" and run the while loop again.*/
+                  if (switchcount == 0 && dir == "asc") {
+                    dir = "desc";
+                    switching = true;
+                  }
+                }
+              }
+            }
+          
+/*table son*/
+
+
+</script>
+
+
+   
+</body> 
+</html>

@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sanabu</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/afa52af320.js" crossorigin="anonymous"></script>
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="path/to/lightbox.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+<body>
+  <header class="desktop"> 
+    <!-- Topbar Start -->
+    <div class="container-fluid">
+        <div class="row align-items-center py-3 px-xl-5">
+            <div class="logo col-lg-3 col-md-3 d-none d-md-block ">
+                <a href="index.html">
+                    <img src="img/sanabu.png">
+                </a>
+            </div>
+
+     <!-- MOBİLE  -->
+              <div class="mobile-logo col-lg-3 col-md-8 col-4 col-xs-4 d-block d-md-none text-left ">
+                <a href="index.html">
+                    <img src="img/sanabu-mobile.png" >
+                </a>         
+            </div>
+            <div class="mobile-bar col-lg-3 col-md-4 col-xs-8 col-6 text-m-right  d-md-none d-block">
+                
+                <a href="login.html" class="btn-user" >
+                    <i class="fa-regular fa-user " ></i>
+                    <span class="badge" style=" background-color: transparent; margin-left: -5px;">Giriş Yap</span>
+                </a>
+                <a href="register.html" class="btn mr-4" >
+                    <i ></i>
+                    <span class="badge" style=" font-weight: 800; background-color: transparent; color:#F5CD3B;margin-top:-5px;">/ Hesap Aç</span>
+                </a>
+                <a href="" class="btn-ilan">
+                    <i class="fa fa-plus-square text-primary"></i>
+                    <span class="badge" style="background-color: transparent; color:#F5CD3B; margin-left: -5px;">İlan Ver</span>
+                </a>
+            </div>
+
+            <div class="searchbox-mobile col-lg-6 col-md-5  col-sm-12 col-xs-12  text-center d-md-none d-block">
+              <div class="search">
+                <div class="input-group mb-3">
+               <input type="text" class="form-control" placeholder="Kelime, ilan no ile ara" aria-label="Kelime, ilan no ile ara" aria-describedby="basic-addon2">
+               <div class="input-group-append">
+                 <button class="btn-submit" type="button"  onclick="location.href='product.html';">
+                   <i class="fa fa-search"></i></button>
+               </div>
+             </div>
+                </div>
+              </div>
+     <!-- MOBİLE  -->
+
+             <div class="searchbox col-lg-5 col-md-5  col-sm-12 col-xs-12  text-center  d-none d-md-block">
+              <div class="search">
+                <div class="input-group mb-3">
+               <input type="text" class="form-control" placeholder="Kelime, ilan no ile ara" aria-label="Kelime, ilan no ile ara" aria-describedby="basic-addon2">
+               <div class="input-group-append">
+                 <button class="btn-submit" type="button"  onclick="location.href='product.html';">
+                   <i class="fa fa-search"></i></button>
+               </div>
+             </div>
+                </div>
+            </div>
+            
+            <div class="user-bar col-lg-4 col-md-4  col-sm-12 col-xs-12 text-right d-none d-md-block ">
+                <a href="login.html" class="btn-user ">
+                    <i class="fa-regular fa-user" ></i>
+                    <span class="badge" style="background-color: transparent; margin-left: -5px;">Giriş Yap</span>
+                    
+                </a> 
+                <a href="register.html" class="btn mr-4">
+                    <i ></i>
+                    <span class="badge" style="font-weight: 800; background-color: transparent; color:#F5CD3B;">/ Hesap Aç</span>
+                </a>
+
+                <a href="" class="btn-ilan">
+                    <i class="fa fa-plus-square text-primary"></i>
+                    <span class="badge" style="background-color: transparent; color:#F5CD3B; margin-left: -5px;">İlan Ver</span>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+</header>
+    <!-- Topbar End -->
+
+
+<div class="container-fluid py-5">
+   <!-- İLAN BAŞLIK -->
+        <div class="row">
+            <div class="col-12 ml-5 ">
+                <span id="product-name" style="font-weight: bold; font-size: 25px; color:black;">Hasarsız Temiz Araç </span>                   
+        </div>
+    </div>
+   <!-- İLAN BAŞLIK SON -->
+
+    <div class="row px-xl-5">
+        <!-- İMAGE -->
+             <div class="col-lg-5 col-md-5 pb-5">                
+                <div id="product-carousel" class="carousel slide" data-ride="carousel">
+
+                  <div class="row">
+                    <!-- <div class="col-md-2">
+                      <ol class="carousel-indicators">
+                        <li data-target="#product-carousel">
+                            <img class="d-block w-100" src="img/araba1.PNG" alt="Image">
+                        </li>
+                    </ol>
+                    </div> -->
+
+                    <div class="col-md-12 col-xl-12 col-sm-12 col-xs-12 col-12"> 
+                    <div class="carousel-outer"> 
+                    <div class="carousel-inner border ">
+                        <div class="carousel-item active">
+                            <a class="btn btn-lg-square" href="img/araba1.PNG" data-fancybox="images">
+                            <img class="hover-shadow w-100 h-100"  src="img/araba1.PNG" alt="Image">
+                        </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a class="btn btn-lg-square " href="img/araba1.PNG" data-fancybox="images">
+                                <img class="hover-shadow w-100 h-100"  src="img/araba1.PNG" alt="Image">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a class="btn btn-lg-square " href="img/araba1.PNG" data-fancybox="images">
+                                <img class="hover-shadow w-100 h-100"  src="img/araba1.PNG"  alt="Image">
+                            </a>
+                        </div>                       
+                    </div>
+             
+                    <a class="carousel-control-prev" href="#product-carousel" role="button" data-slide="prev">
+                        <i class="fa fa-2x fa-angle-left text-dark"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#product-carousel" role="button" data-slide="next">
+                        <i class="fa fa-2x fa-angle-right text-dark"></i>
+                    </a>
+                   </div>  </div>
+                    <!-- <ol class="carousel-indicators">
+                        <li data-target="#product-carousel">
+                            <img class="w-100 h-100" src="img/araba1.PNG" alt="Image">
+                       
+                        </li>
+                    </ol> -->
+                  </div>
+                </div>
+            </div> 
+<!-- İMAGE SON -->
+
+    <!-- İLAN BİLGİLERİ -->
+     <div class="col-lg-4 col-md-4 pb-5 d-none d-md-block">
+               <div class="row ">
+                      <div class="col-12 ">
+                        <span id="product-price" style="font-weight: bold; font-size: 25px; color:black;">$1500.00 </span>                   
+                      </div>
+               </div>                       
+           <ul class="product-profile-info">
+                  <div> <span style="font-weight: bold;"> İlan No:  </span> <span class="value ml-3">010102456558</span>
+                  </div>
+                   <div>  <span style="font-weight: bold;"> İlan Tarihi: </span> <span class="value ml-3">07.05.2024</span>
+                   </div>
+                   <div>  <span style="font-weight: bold;"> Marka:  </span> <span class="value ml-3">Volkswagen</span>
+                   </div>
+                   <div>  <span style="font-weight: bold;"> Seri:  </span> <span class="value ml-3">1.4 TDI</span>
+                   </div>
+                   <div>  <span style="font-weight: bold;"> Model:  </span> <span class="value ml-3">Polo</span>
+                   </div>
+                   <div>  <span style="font-weight: bold;"> Yıl:  </span> <span class="value ml-3">2018</span>
+                   </div>
+                   <div>  <span style="font-weight: bold;"> Yakıt:  </span> <span class="value ml-3">Dizel</span>
+                   </div>
+                   <div>  <span style="font-weight: bold;"> Vites:  </span> <span class="value ml-3">Otomatik</span>
+                   </div>
+                   <div>  <span style="font-weight: bold;"> Km:  </span> <span class="value ml-3">95.000</span>
+                   </div>
+             </ul>
+       </div>
+<!-- İLAN BİLGİLERİ SON-->
+
+        <!-- ACCOUNT -->
+                <div class="col-lg-3 col-md-3 d-none d-md-block">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Account</h5>
+                          <div style="font-size: 14px;"> <span style="font-weight: bold;"> Hesap Açma Tarihi:</span> <span> Temmuz 2023</span> </div>
+                          <div style="font-size: 14px;">
+                            <span style="font-weight: bold;">Tel:</span>
+                          </div>
+                         <a href=""style="font-size: 14px;">Mesaj Gönder</a>                   
+                        </div>
+                      </div>
+                </div>
+     <!-- ACCOUNT SON -->
+   </div>
+
+
+          <!-- TAB MENÜ -->
+
+                <div class="row px-xl-5 ">
+                    <div class="col">
+                        <div class="nav nav-tabs justify-content-center border-secondary mb-4">
+                            <a class="nav-item nav-link active" data-toggle="tab" href="#ilan-detay">İlan Detayı</a>
+                            <a class="nav-item nav-link  d-none d-md-block" data-toggle="tab" href="#teknik-özellik">Teknik Özellikler</a>
+                            <a class="nav-item nav-link  d-md-none d-block" data-toggle="tab" href="#aciklama-mobil">Açıklama</a>
+                            <a class="nav-item nav-link" data-toggle="tab" href="#konum">Konum</a>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="ilan-detay">
+                                <div class="container-fluid d-none d-md-block">
+                                    <div class="row">                              
+                                        <div class="col-12 aciklama" id="aciklama" >                           
+                                           <h5 class="mb-3">Açıklama</h5>
+                                            <p>Takimata kasd ipsum accusam sadipscing, eos dolores sit no ut diam consetetur duo justo est, sit sanctus diam tempor aliquyam eirmod nonumy rebum dolor accusam, ipsum kasd eos consetetur at sit rebum, diam kasd invidunt tempor lorem, ipsum lorem elitr sanctus eirmod takimata dolor ea invidunt.</p>
+                                         </div>
+                                      </div>
+                                </div>
+
+                                <div class="col-12 d-md-none d-block">
+
+                                  <ul class="product-profile-info">
+                                  <div>  <span style="font-weight: bold;"> Fiyat: </span> <span class="value ml-3">$1500.00</span>
+                                  </div>                                       
+                                   <div> <span style="font-weight: bold;"> İlan No:  </span> <span class="value ml-3">010102456558</span>
+                                   </div>                
+                                   <div>  <span style="font-weight: bold;"> İlan Tarihi: </span> <span class="value ml-3">07.05.2024</span>
+                                   </div>
+                                   <div>  <span style="font-weight: bold;"> Marka:  </span> <span class="value ml-3">Volkswagen</span>
+                                   </div>
+                                   <div>  <span style="font-weight: bold;"> Seri:  </span> <span class="value ml-3">1.4 TDI</span>
+                                   </div>
+                                   <div>  <span style="font-weight: bold;"> Model:  </span> <span class="value ml-3">Polo</span>
+                                   </div>
+                                   <div>  <span style="font-weight: bold;"> Yıl:  </span> <span class="value ml-3">2018</span>
+                                   </div>
+                                   <div>  <span style="font-weight: bold;"> Yakıt:  </span> <span class="value ml-3">Dizel</span>
+                                   </div>
+                                   <div>  <span style="font-weight: bold;"> Vites:  </span> <span class="value ml-3">Otomatik</span>
+                                   </div>
+                                   <div>  <span style="font-weight: bold;"> Km:  </span> <span class="value ml-3">95.000</span>
+                                   </div>
+                                </ul>
+                                </div>
+                             
+                                   <div class="container-fluid">                              
+                                  <div class="row">                              
+                                    <div class="col-12 özellik" id="özellik" >                           
+                                       <h5 class="mb-3">Özellikler</h5>
+                                    </div>                               
+                                    <div class="col-12 özellik1 " id="özellik1">
+                                        <div class="mt-2 mb-2" style="font-weight: bold;">Boyalı ve Değişen Parça</div>
+                                     
+                                        <div class="container-fluid d-inline-block "style=" border-style: ridge; background-color:#F9F7F7;">
+                                            <div class="row" >
+                                               <div class=" col-3 d-inline-block mt-1 mb-1" >
+                                                <ul class="list-group list-group" >
+                                                  <li class="list-group-item " style="border-color: #F9F7F7; background-color:#F9F7F7;">
+                                                <input class="form-check-input me-1" type="checkbox" value="" > First checkbox
+                                                 </li>
+                                                </ul>
+                                               </div>    
+                                              <div class=" col-3 d-inline-block mt-1 mb-1" >
+                                                <ul class="list-group list-group">
+                                                <li class="list-group-item" style="border-color: #F9F7F7; background-color:#F9F7F7;">
+                                                    <input class="form-check-input me-1" type="checkbox" value="" >
+                                                    Second checkbox
+                                                  </li>
+                                               </ul>
+                                               </div>    
+                                              <div class=" col-3 d-inline-block mt-1 mb-1" >
+                                                <ul class="list-group list-group">
+                                                <li class="list-group-item" style="border-color: #F9F7F7; background-color:#F9F7F7;">
+                                                    <input class="form-check-input me-1" type="checkbox" value="" >
+                                                    Third checkbox
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                              <div class=" col-3 d-inline-block mt-1 mb-1" >
+                                                <ul class="list-group list-group">
+                                                  <li class="list-group-item" style="border-color: #F9F7F7; background-color:#F9F7F7;">
+                                                    <input class="form-check-input me-1" type="checkbox" value="" >
+                                                    Fourth checkbox
+                                                  </li>
+                                                </ul>
+                                              </div>    
+                                          </div>
+                                        </div>                                    
+                                    </div>
+                                        
+                                    <div class="col-12 özellik2 " id="özellik2">
+                                        <div class="mt-2 mb-2" style="font-weight: bold;">Güvenlik</div>
+                                        <div class="container-fluid d-inline-block "style=" border-style: ridge; background-color:#F9F7F7;">
+                                            <div class="row" >
+                                               <div class=" col-3 d-inline-block mt-1 mb-1" >
+                                                <ul class="list-group list-group" >
+                                                  <li class="list-group-item " style="border-color: #F9F7F7; background-color:#F9F7F7;">
+                                                <input class="form-check-input me-1" type="checkbox" value="" > First checkbox
+                                                 </li>
+                                                </ul>
+                                               </div>
+                                              <div class=" col-3 d-inline-block mt-1 mb-1" >
+                                                <ul class="list-group list-group">
+                                                <li class="list-group-item" style="border-color: #F9F7F7; background-color:#F9F7F7;">
+                                                    <input class="form-check-input me-1" type="checkbox" value="" >
+                                                    Second checkbox
+                                                  </li>
+                                               </ul>
+                                               </div>
+                                              <div class=" col-3 d-inline-block mt-1 mb-1" >
+                                                <ul class="list-group list-group">
+                                                <li class="list-group-item" style="border-color: #F9F7F7; background-color:#F9F7F7;">
+                                                    <input class="form-check-input me-1" type="checkbox" value="" >
+                                                    Third checkbox
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                              <div class=" col-3 d-inline-block mt-1 mb-1" >
+                                                <ul class="list-group list-group">
+                                                  <li class="list-group-item" style="border-color: #F9F7F7; background-color:#F9F7F7;">
+                                                    <input class="form-check-input me-1" type="checkbox" value="" >
+                                                    Fourth checkbox
+                                                  </li>
+                                                </ul>
+                                              </div>
+    
+                                          </div>
+                                        </div>
+                                    </div>                                 
+
+                                    <div class="col-12 özellik3" id="özellik3">
+                                        <div class="mt-2 mb-2" style="font-weight: bold;">İç Donanım</div>
+                                        <div class="container-fluid d-inline-block "style=" border-style: ridge; background-color:#F9F7F7;">
+                                            <div class="row" >
+                                               <div class=" col-3 d-inline-block mt-1 mb-1" >
+                                                <ul class="list-group list-group" >
+                                                  <li class="list-group-item " style="border-color: #F9F7F7; background-color:#F9F7F7;">
+                                                <input class="form-check-input me-1" type="checkbox" value="" > First checkbox
+                                                 </li>
+                                                </ul>
+                                               </div>
+    
+                                              <div class=" col-3 d-inline-block mt-1 mb-1" >
+                                                <ul class="list-group list-group">
+                                                <li class="list-group-item" style="border-color: #F9F7F7; background-color:#F9F7F7;">
+                                                    <input class="form-check-input me-1" type="checkbox" value="" >
+                                                    Second checkbox
+                                                  </li>
+                                               </ul>
+                                               </div>
+    
+                                              <div class=" col-3 d-inline-block mt-1 mb-1" >
+                                                <ul class="list-group list-group">
+                                                <li class="list-group-item" style="border-color: #F9F7F7; background-color:#F9F7F7;">
+                                                    <input class="form-check-input me-1" type="checkbox" value="" >
+                                                    Third checkbox
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                              <div class=" col-3 d-inline-block mt-1 mb-1" >
+                                                <ul class="list-group list-group">
+                                                  <li class="list-group-item" style="border-color: #F9F7F7; background-color:#F9F7F7;">
+                                                    <input class="form-check-input me-1" type="checkbox" value="" >
+                                                    Fourth checkbox
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                           </div>
+                                         </div>
+                                      </div>
+                                   
+                                      <div class="col-12 özellik4" id="özellik4">
+                                        <div class="mt-2 mb-2" style="font-weight: bold;">Dış Donanım</div>
+                                        <div class="container-fluid d-inline-block "style=" border-style: ridge; background-color:#F9F7F7;">
+                                            <div class="row" >
+                                               <div class=" col-3 d-inline-block mt-1 mb-1" >
+                                                <ul class="list-group list-group" >
+                                                  <li class="list-group-item " style="border-color: #F9F7F7; background-color:#F9F7F7;">
+                                                <input class="form-check-input me-1" type="checkbox" value="" > First checkbox
+                                                 </li>
+                                                </ul>
+                                               </div>    
+                                              <div class=" col-3 d-inline-block mt-1 mb-1" >
+                                                <ul class="list-group list-group">
+                                                <li class="list-group-item" style="border-color: #F9F7F7; background-color:#F9F7F7;">
+                                                    <input class="form-check-input me-1" type="checkbox" value="" >
+                                                    Second checkbox
+                                                  </li>
+                                               </ul>
+                                               </div>    
+                                              <div class=" col-3 d-inline-block mt-1 mb-1" >
+                                                <ul class="list-group list-group">
+                                                <li class="list-group-item" style="border-color: #F9F7F7; background-color:#F9F7F7;">
+                                                    <input class="form-check-input me-1" type="checkbox" value="" >
+                                                    Third checkbox
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                              <div class=" col-3 d-inline-block mt-1 mb-1" >
+                                                <ul class="list-group list-group">
+                                                  <li class="list-group-item" style="border-color: #F9F7F7; background-color:#F9F7F7;">
+                                                    <input class="form-check-input me-1" type="checkbox" value="" >
+                                                    Fourth checkbox
+                                                  </li>
+                                                </ul>
+                                              </div>    
+                                          </div>
+                                        </div>
+                                    </div>
+                                 
+                                    <div class="col-12 özellik5" id="özellik5">
+                                        <div class="mt-2 mb-2" style="font-weight: bold;">Multi Medya</div>
+                                        <div class="container-fluid d-inline-block "style=" border-style: ridge; background-color:#F9F7F7;">
+                                            <div class="row" >
+                                               <div class=" col-3 d-inline-block mt-1 mb-1" >
+                                                <ul class="list-group list-group" >
+                                                  <li class="list-group-item " style="border-color: #F9F7F7; background-color:#F9F7F7;">
+                                                <input class="form-check-input me-1" type="checkbox" value="" > First checkbox
+                                                 </li>
+                                                </ul>
+                                               </div>    
+                                              <div class=" col-3 d-inline-block mt-1 mb-1" >
+                                                <ul class="list-group list-group">
+                                                <li class="list-group-item" style="border-color: #F9F7F7; background-color:#F9F7F7;">
+                                                    <input class="form-check-input me-1" type="checkbox" value="" >
+                                                    Second checkbox
+                                                  </li>
+                                               </ul>
+                                               </div>    
+                                              <div class=" col-3 d-inline-block mt-1 mb-1" >
+                                                <ul class="list-group list-group">
+                                                <li class="list-group-item" style="border-color: #F9F7F7; background-color:#F9F7F7;">
+                                                    <input class="form-check-input me-1" type="checkbox" value="" >
+                                                    Third checkbox
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                              <div class=" col-3 d-inline-block mt-1 mb-1" >
+                                                <ul class="list-group list-group">
+                                                  <li class="list-group-item" style="border-color: #F9F7F7; background-color:#F9F7F7;">
+                                                    <input class="form-check-input me-1" type="checkbox" value="" >
+                                                    Fourth checkbox
+                                                  </li>
+                                                </ul>
+                                              </div>    
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                            <div class="container-fluid tab-pane fade  " id="teknik-özellik">
+                                <div class="row mb-3">
+                                     <div class="col-12"> 
+                                        <span class="aciklama" id="aciklama">
+                                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam saepe ullam, deserunt, eum praesentium earum officia accusamus vel voluptatem explicabo quas assumenda amet sed
+                                        </span>                                             
+                                      </div>
+                                  </div>
+
+                                   <div class="row">    
+                                        <div class="col-12" style="border-bottom: ridge; text-align: center;" > 
+                                           <h5 class="mb-3">Genel Bakış</h5>                                                                    
+                                         </div>
+                                    </div>
+                                     
+                              <div class="row">
+                                        <div class="col-md-6 col-6 " id="teknik1">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item px-0">
+                                                    Araç Tipi
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    Kasa Tipi / Kapı Sayısı
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    Motor Tipi
+                                                </li>                                       
+                                              </ul> 
+                                        </div>
+                                        <div class="col-md-6 col-6" id="teknik-özellik">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item px-0">
+                                                    Binek Araç / B Segment
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    Hatchback / 5 Kapı 
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    Benzinli / 3 silindir 
+                                                </li>                                                                               
+                                              </ul> 
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <div class="tab-pane fade  d-md-none d-block" id="aciklama-mobil">
+                                  <div class="container-fluid">
+                                      <div class="row">
+                                          <div class="col-12">
+                                              <h5 class="mb-3">Açıklama</h5>
+                                              <p>Takimata kasd ipsum accusam sadipscing, eos dolores sit no ut diam consetetur duo justo est, sit sanctus diam tempor aliquyam eirmod nonumy rebum dolor accusam, ipsum kasd eos consetetur at sit rebum, diam kasd invidunt tempor lorem, ipsum lorem elitr sanctus eirmod takimata dolor ea invidunt.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  </div>
+
+
+                            <div class="tab-pane fade" id="konum">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12">
+
+                                            <p>Eos no lorem eirmod diam diam, eos elitr et gubergren diam sea. Consetetur vero aliquyam invidunt duo dolores et duo sit. Vero diam ea vero et dolore rebum, dolor rebum eirmod consetetur invidunt sed sed et, lorem duo et eos elitr, sadipscing kasd ipsum rebum diam. Dolore diam stet rebum sed tempor kasd eirmod. Takimata kasd ipsum accusam sadipscing, eos dolores sit no ut diam consetetur duo justo est, sit sanctus diam tempor aliquyam eirmod nonumy rebum dolor accusam, ipsum kasd eos consetetur at sit rebum, diam kasd invidunt tempor lorem, ipsum lorem elitr sanctus eirmod takimata dolor ea invidunt.</p>
+                                            <p>Dolore magna est eirmod sanctus dolor, amet diam et eirmod et ipsum. Amet dolore tempor consetetur sed lorem dolor sit lorem tempor. Gubergren amet amet labore sadipscing clita clita diam clita. Sea amet et sed ipsum lorem elitr et, amet et labore voluptua sit rebum. Ea erat sed et diam takimata sed justo. Magna takimata justo et amet magna et.</p>
+                                        
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                 </div>
+             </div>
+       <!-- TAB MENÜ SON-->
+ </div>
+        
+
+
+
+
+
+
+    <!-- Footer Start -->
+    <footer> 
+        <div class="container-fluid bg-secondary text-dark mt-5 pt-5">
+            <div class="row px-xl-5 pt-5">
+                <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                    <a href="" class="text-decoration-none">
+                        <h1 class="mb-4 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border border-white px-3 mr-1">S</span>Sanabu</h1>
+                    </a>
+                    <p>LoremIpsum....</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>KKTC</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>info@sanabu.com</p>
+                    <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+0850 214 9625</p>
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="row">    
+                     <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold text-dark mb-4">Kurumsal</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                           <a class="text-dark mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Hakkımızda</a>
+                            <a class="text-dark mb-2" href="cart.html"><i class="fa fa-angle-right mr-2"></i>Sözleşmeler</a>
+                            <a class="text-dark mb-2" href="checkout.html"><i class="fa fa-angle-right mr-2"></i>Kurumsal</a>
+                             <a class="text-dark" href="contact.html"><i class="fa fa-angle-right mr-2"></i>İletişim</a>
+                             </div>
+                         </div>
+                        <div class="col-md-4 mb-5">
+                            <h5 class="font-weight-bold text-dark mb-4">Hizmetlerimiz</h5>
+                            <div class="d-flex flex-column justify-content-start">
+                                <a class="text-dark mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Doping</a>
+                                <a class="text-dark mb-2" href="shop.html"><i class="fa fa-angle-right mr-2"></i>Güvenli E-Ticaret </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5">
+                            <h5 class="font-weight-bold text-dark mb-4">Gizlilik ve Kullanım</h5>
+                            <div class="d-flex flex-column justify-content-start">
+                                <a class="text-dark mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Güvenli Alışverişin İpuçları</a>
+                                <a class="text-dark mb-2" href="sözlesmeler.html"><i class="fa fa-angle-right mr-2"></i>Sözleşmeler ve Kurallar </a>
+                                <a class="text-dark mb-2" href="sözlesmeler.html"><i class="fa fa-angle-right mr-2"></i>Hesap Sözleşmesi</a>
+                                <a class="text-dark mb-2" href="sözlesmeler.html"><i class="fa fa-angle-right mr-2"></i>Kullanım Koşulları </a>
+                                <a class="text-dark mb-2" href="sözlesmeler.html"><i class="fa fa-angle-right mr-2"></i>Kişisel Verilerin Korunması</a>
+                                <a class="text-dark mb-2" href="sözlesmeler.html"><i class="fa fa-angle-right mr-2"></i>Çerez Yönetimi</a>
+                                <a class="text-dark mb-2" href="shop.html"><i class="fa fa-angle-right mr-2"></i>Yardım ve İşlem Rehberi </a>
+                            </div>
+                        </div>  
+    
+                        <!-- E-Bülten -->
+                        <!-- <div class="col-md-4 mb-5">
+                            <h5 class="font-weight-bold text-dark mb-4">Newsletter</h5>
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control border-0 py-4" placeholder="Your Name" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control border-0 py-4" placeholder="Your Email"
+                                        required="required" />
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary btn-block border-0 py-3" type="submit">Subscribe Now</button>
+                                </div>
+                            </form>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row border-top border-light mx-xl-5 py-4">
+                <div class="col-md-6 px-xl-0">
+                    <p class="mb-md-0 text-center text-md-left text-dark">
+                        &copy; <a class="text-dark font-weight-semi-bold" href="#">Sanabu</a> Designed
+                        by
+                        <a class="text-dark font-weight-semi-bold" href="https://innovayazilim.net/" target="_blank">İnnova Yazılım</a><br>
+                    </p>
+                </div>
+    
+    
+               <!-- Footer Card Görsel -->
+    
+                <!-- <div class="col-md-6 px-xl-0 text-center text-md-right">
+                    <img class="img-fluid" src="img/payments.png" alt="">
+                </div> -->
+    
+            <!-- Footer Card Görsel End-->
+    
+            </div>
+        </div>
+    </footer>
+        <!-- Footer End -->
+    
+        <!-- Bottom Navbar -->
+        <div class="bottom-navbar">
+            <a href="index.html">         
+                <i class="fa fa-home" style="font-size: 20px; color: #F5CD3B;"></i>
+                <strong>Anasayfa</strong>
+            </a>
+    
+            <a href="index.html">
+                <i class="fa fa-user" style="font-size: 20px; color: #F5CD3B;"></i>
+                <strong>Hesabım</strong>
+            </a>
+            <a href="index.html">
+                <i class="fa fa-plus-square" style="font-size: 20px; color: #F5CD3B;"></i>
+     
+                <strong>İlan Ver</strong>
+            </a>
+            <a href="index.html">
+                <i class="fa fa-heart" style="font-size: 20px; color: #F5CD3B;" ></i>
+                <strong>Favorilerim</strong>
+            </a>
+        </div>
+        <!-- Bottom Navbar Son -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+        <!-- <script>
+            function openModal() {
+              document.getElementById("myModal").style.display = "block";
+            }
+            
+            function closeModal() {
+              document.getElementById("myModal").style.display = "none";
+            }
+            
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script> -->
+    
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+    
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="path/to/lightbox.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+</body>    
+</html>
